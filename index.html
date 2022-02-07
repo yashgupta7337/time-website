@@ -29,7 +29,9 @@
                 document.getElementById('wish').innerHTML = "Good Morning ⛅️";
             } else if (a.getHours() >= 12 && a.getMinutes() >= 0 && a.getHours() <= 16 && a.getMinutes() <= 59) {
                 document.getElementById('wish').innerHTML = "Good Afternoon ☀️";
-            } else if (a.getHours() >= 17 && a.getMinutes() >= 0 && a.getHours() <= 4 && a.getMinutes() <= 59) {
+            } else if (a.getHours() >= 17 && a.getMinutes() >= 0 && a.getHours() <= 23 && a.getMinutes() <= 59) {
+                document.getElementById('wish').innerHTML = "Good Evening 🌙";
+            } else if (a.getHours() >= 0 && a.getMinutes() >= 0 && a.getHours() <= 4 && a.getMinutes() <= 59) {
                 document.getElementById('wish').innerHTML = "Good Evening 🌙";
             }
         }, 1000);
