@@ -25,11 +25,11 @@
             time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
             date = a.toLocaleDateString(undefined, options);
             document.getElementById('time').innerHTML = time + "<br>on " + date;
-            if (a.getHours() >= 0 && a.getMinutes() >= 1 && a.getHours() <= 11 && a.getMinutes() <= 59) {
+            if (a.getHours() >= 5 && a.getMinutes() >= 0 && a.getHours() <= 11 && a.getMinutes() <= 59) {
                 document.getElementById('wish').innerHTML = "Good Morning ⛅️";
-            } else if (a.getHours() >= 12 && a.getMinutes() >= 1 && a.getHours() <= 15 && a.getMinutes() <= 59) {
+            } else if (a.getHours() >= 12 && a.getMinutes() >= 0 && a.getHours() <= 16 && a.getMinutes() <= 59) {
                 document.getElementById('wish').innerHTML = "Good Afternoon ☀️";
-            } else if (a.getHours() >= 16 && a.getMinutes() >= 0 && a.getHours() <= 23 && a.getMinutes() <= 59) {
+            } else if (a.getHours() >= 17 && a.getMinutes() >= 0 && a.getHours() <= 4 && a.getMinutes() <= 59) {
                 document.getElementById('wish').innerHTML = "Good Evening 🌙";
             }
         }, 1000);
